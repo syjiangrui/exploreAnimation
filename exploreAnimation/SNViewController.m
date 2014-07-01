@@ -10,6 +10,8 @@
 
 @interface SNViewController ()
 
+@property (nonatomic,strong) UITableView *tableView;
+
 @end
 
 @implementation SNViewController
@@ -17,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
 }
 
 - (void)didReceiveMemoryWarning
