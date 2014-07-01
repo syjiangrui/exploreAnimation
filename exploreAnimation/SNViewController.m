@@ -20,6 +20,12 @@
 {
     [super viewDidLoad];
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 320, 568)];
+    [self.view addSubview:self.tableView];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.tableView.frame = self.view.bounds;
 }
 
 - (void)didReceiveMemoryWarning
