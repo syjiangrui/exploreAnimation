@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD25DE2C1962A65800BC0958 /* SNBaseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BD25DE2B1962A65800BC0958 /* SNBaseLayer.m */; };
 		BD9D998B196299FB003641CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9D998A196299FB003641CD /* Foundation.framework */; };
 		BD9D998D196299FB003641CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9D998C196299FB003641CD /* CoreGraphics.framework */; };
 		BD9D998F196299FB003641CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9D998E196299FB003641CD /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD25DE2A1962A65800BC0958 /* SNBaseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNBaseLayer.h; sourceTree = "<group>"; };
+		BD25DE2B1962A65800BC0958 /* SNBaseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNBaseLayer.m; sourceTree = "<group>"; };
 		BD9D9987196299FB003641CD /* exploreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exploreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9D998A196299FB003641CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BD9D998C196299FB003641CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD25DE291962A63D00BC0958 /* customLayer */ = {
+			isa = PBXGroup;
+			children = (
+				BD25DE2A1962A65800BC0958 /* SNBaseLayer.h */,
+				BD25DE2B1962A65800BC0958 /* SNBaseLayer.m */,
+			);
+			path = customLayer;
+			sourceTree = "<group>";
+		};
 		BD9D997E196299FB003641CD = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 		BD9D9990196299FB003641CD /* exploreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				BD25DE291962A63D00BC0958 /* customLayer */,
 				BD9D9999196299FB003641CD /* SNAppDelegate.h */,
 				BD9D999A196299FB003641CD /* SNAppDelegate.m */,
 				BD9D999C196299FB003641CD /* Main.storyboard */,
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9D9997196299FB003641CD /* main.m in Sources */,
+				BD25DE2C1962A65800BC0958 /* SNBaseLayer.m in Sources */,
 				BD9D99A1196299FB003641CD /* SNViewController.m in Sources */,
 				BD9D999B196299FB003641CD /* SNAppDelegate.m in Sources */,
 			);
@@ -457,6 +471,7 @@
 				BD9D99BB196299FB003641CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD9D99BC196299FB003641CD /* Build configuration list for PBXNativeTarget "exploreAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +480,7 @@
 				BD9D99BE196299FB003641CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
