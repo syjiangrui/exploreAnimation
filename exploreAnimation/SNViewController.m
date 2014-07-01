@@ -46,6 +46,7 @@
     CABasicAnimation *animation = [CABasicAnimation animation]; animation.keyPath = @"backgroundColor";
     animation.toValue = (__bridge id)color.CGColor;
     animation.fromValue = (__bridge id)self.colorLayer.backgroundColor;
+    animation.duration = 2.f;
     self.colorLayer.backgroundColor = color.CGColor;
     //apply animation to layer
     [self.colorLayer addAnimation:animation forKey:nil];
